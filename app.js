@@ -43,7 +43,7 @@ async function sendmailAdminRegistation(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
     <p>visit this link for registation https://teatruth-8083d.web.app/registation?Token=${user.token}</p>`
@@ -78,7 +78,7 @@ async function sendmailManagerRegistation(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>visit this link for registation https://teatruth-8083d.web.app/registation?Token=${user.token}</p>`
   };
@@ -112,7 +112,7 @@ async function sendmailLoaderRegistation(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
@@ -146,7 +146,7 @@ async function sendmailSupervisorRegistation(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
@@ -180,7 +180,7 @@ async function sendmailDistributorRegistation(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
@@ -215,7 +215,7 @@ async function sendmailwebfrogetpassword(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
     <p>visit this link for resetpassword https://teatruth-8083d.web.app/registaition?Token=${user.token}</p>`
@@ -251,7 +251,7 @@ async function sendmailappfrogetpassword(user, callback) {
 
   let mailOptions = {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "registation for web app", // Subject line
     html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
     <p>your token is ${user.token}</p>`
@@ -285,7 +285,7 @@ async function sendMail(user, callback) {
 
   let mailOptions = {
     from: '"Fun Of Heuristic"<teatruth@gmail.com>', // sender address
-    to: 'tharinduvindula@gmail.com', // list of receivers
+    to: user.email, // list of receivers
     subject: "Wellcome to Fun Of Heuristic 👻", // Subject line
     html: `<h1>Hi ${user.name}</h1><br>
     <h4>Thanks for joining us</h4>`
