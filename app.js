@@ -16,7 +16,7 @@ app.listen(process.env.PORT || 3000, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>"
+    "<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>"
   );
 });
 
@@ -45,7 +45,7 @@ async function sendmailAdminRegistation(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
     <p>visit this link for registation https://teatruth-8083d.web.app/registation?Token=${user.token}</p>`
   };
 
@@ -80,7 +80,7 @@ async function sendmailManagerRegistation(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1><p>visit this link for registation https://teatruth-8083d.web.app/registation?Token=${user.token}</p>`
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>visit this link for registation https://teatruth-8083d.web.app/registation?Token=${user.token}</p>`
   };
 
   // send mail with defined transport object
@@ -114,7 +114,7 @@ async function sendmailLoaderRegistation(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
 
   // send mail with defined transport object
@@ -148,7 +148,7 @@ async function sendmailSupervisorRegistation(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
 
   // send mail with defined transport object
@@ -182,7 +182,7 @@ async function sendmailDistributorRegistation(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1><p>your token is ${user.token}</p>`
   };
 
   // send mail with defined transport object
@@ -217,8 +217,8 @@ async function sendmailwebfrogetpassword(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>
-    <p>visit this link for resetpassword https://teatruth-8083d.web.app/froget-password?Token=${user.token}</p>`
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
+    <p>visit this link for resetpassword https://teatruth-8083d.web.app/registaition?Token=${user.token}</p>`
   };
 
   // send mail with defined transport object
@@ -253,7 +253,7 @@ async function sendmailappfrogetpassword(user, callback) {
     from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
     subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 20px; height: 20px; margin: 20 %; margin - top: 8 %;'/></h1>
     <p>your token is ${user.token}</p>`
   };
 
