@@ -16,7 +16,7 @@ app.listen(process.env.PORT || 3000, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='./favicon.png' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>"
+    "<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>"
   );
 });
 
