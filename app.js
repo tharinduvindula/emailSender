@@ -263,5 +263,40 @@ async function sendmailappfrogetpassword(user, callback) {
   callback(info);
 }
 
+app.post("/sendmail", (req, res) => {
+  console.log("request came");
+  let user = req.body;
+  sendmail(user, info => {
+    console.log(`The mail has beed send`);
+    res.send(info);
+  });
+});
+
+async function sendmail(user, callback) {
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: details.email,
+      pass: details.password
+    }
+  });
+
+  let mailOptions = {
+    from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
+    to: 'tharinduvindula@gmail.com', // list of receivers
+    subject: "registation for web app", // Subject line
+    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>
+    <p>your token is ${user.token}</p>`
+  };
+
+  // send mail with defined transport object
+  let info = await transporter.sendMail(mailOptions);
+
+  callback(info);
+}
+
 
 // main().catch(console.error);
