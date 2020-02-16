@@ -262,17 +262,16 @@ async function sendmailappfrogetpassword(user, callback) {
 
   callback(info);
 }
-
 app.post("/sendmail", (req, res) => {
   console.log("request came");
   let user = req.body;
-  sendmail(user, info => {
-    console.log(`The mail has beed send`);
+  sendMail(user, info => {
+    console.log(`The mail has beed send 😃 and the id is ${info.messageId}`);
     res.send(info);
   });
 });
 
-async function sendmail(user, callback) {
+async function sendMail(user, callback) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -285,11 +284,11 @@ async function sendmail(user, callback) {
   });
 
   let mailOptions = {
-    from: '"from Tea Truth "<teatruth@gmail.com>', // sender address
+    from: '"Fun Of Heuristic"<teatruth@gmail.com>', // sender address
     to: 'tharinduvindula@gmail.com', // list of receivers
-    subject: "registation for web app", // Subject line
-    html: `<h1 style='text-align: center'>Wellcome to Tea Truth <br><br> <img src='https://i.ibb.co/1v6XfQV/favicon.jpg' style='width: 80px; height: 80px; margin: 20 %; margin - top: 8 %;'/></h1>
-    <p>your token is ${user.token}</p>`
+    subject: "Wellcome to Fun Of Heuristic 👻", // Subject line
+    html: `<h1>Hi ${user.name}</h1><br>
+    <h4>Thanks for joining us</h4>`
   };
 
   // send mail with defined transport object
@@ -297,6 +296,5 @@ async function sendmail(user, callback) {
 
   callback(info);
 }
-
 
 // main().catch(console.error);
